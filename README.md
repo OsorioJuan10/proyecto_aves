@@ -5,7 +5,11 @@ This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course
 
 ## Contributing Members
 
-**Team Leader: [Juan Camilo Osorio Colonia](https://github.com/[github handle])(@OsorioJuan10)**
+
+## Contributing Members
+
+**Team Leader:** [Juan Camilo Osorio Colonia](https://github.com/OsorioJuan10) ([@OsorioJuan10](https://github.com/OsorioJuan10))
+
 
 ## Contact
 * Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
