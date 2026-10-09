@@ -1,11 +1,6 @@
 # Project Name
 This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
 
-#### -- Project Status: [Active]
-
-## Contributing Members
-
-
 ## Contributing Members
 
 **Team Leader:** [Juan Camilo Osorio Colonia](https://github.com/OsorioJuan10) ([@OsorioJuan10](https://github.com/OsorioJuan10))
