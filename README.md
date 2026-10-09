@@ -1,45 +1,18 @@
-____________________________________________________________________________________
-
-
-# Project Template
-This is the template for the Project I course at the IA Master, Universidad Icesi, Cali Colombia
-
-This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
-
-*Instructions: Edit this template filling in the titles, information, and links! Feel free to stray a bit to suit your project but try to provide the main information for reviews and feedback purposes.*
-## Remove this table after updating your project's information
-____________________________________________________________________________________
-
 # Project Name
 This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
 
-#### -- Project Status: [Active, On-Hold, Completed]
+#### -- Project Status: [Active]
 
 ## Contributing Members
 
-**Team Leader: [Full Name](https://github.com/[github handle])(@slackHandle)**
-**Instructor: [Full Name](https://github.com/[github handle])(@slackHandle)**
-
-#### Other Members:
-
-|Name     |  Email   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+**Team Leader: [Juan Camilo Osorio Colonia](https://github.com/[github handle])(@OsorioJuan10)**
 
 ## Contact
 * Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
 
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
-
-### Partner
-This section should be added when there's a partner institution 
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
+The purpose of this project is to develop machine learning models to automatically identify bird species from audio recordings using passive acoustic monitoring in Colombia’s Magdalena Medio region. Students will extract audio features and compare classification algorithms, including Support Vector Machines and ensemble methods, while addressing class imbalance and the challenges of real-world recordings. The project has the potential to support biodiversity monitoring and conservation efforts by enabling more efficient, non-invasive species identification. It also promotes data-driven environmental research and strengthens the connection between machine learning education and local ecological challenges.
 
 ### Methods Used
 * Inferential Statistics
@@ -58,26 +31,45 @@ This section should be added when there's a partner institution
 * JavaScript
 * etc. 
 
-## Project Description
-(Provide a more detailed overview of the project.  Talk a bit about your data sources and what questions and hypotheses you are exploring. What specific data analysis/visualization and modeling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
 
-## Getting Started
-Instructions for contributors
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+## Project Description: Identifying Species by Their Calls in Colombia
 
-    *If using offline data mention that and how contributors may obtain the data )*
-    
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
+Passive acoustic monitoring offers a non-invasive approach to studying biodiversity by collecting environmental audio recordings and identifying species through their vocalizations. This project builds on the BirdCLEF+ 2025 challenge, focused on the Middle Magdalena Valley in Colombia, a region of high ecological importance. The main objective is to develop machine learning models that can identify bird species from short audio recordings and evaluate their potential for supporting biodiversity monitoring and conservation.
 
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
+### Data Sources and Research Questions
 
-5. Follow setup [instructions](Link to file)
+The project draws on audio recordings from Xeno-Canto and datasets associated with previous BirdCLEF competitions. The complete dataset contains approximately 28,564 recordings covering 206 species. To make the project manageable within the course, students will work with a subset of 10–20 species and short audio clips.
 
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
+The analysis will explore the following research questions:
+
+1. How accurately can machine learning models identify bird species from their vocalizations?
+2. Which audio features provide the most useful information for distinguishing between species?
+3. How does class imbalance affect classification performance, particularly for species with fewer recordings?
+4. How robust are the models to background noise and differences between training recordings and real-world field recordings?
+
+The main hypothesis is that audio features extracted from recordings contain sufficient discriminatory information to classify species with reasonable accuracy. However, performance is expected to vary across species, particularly when recordings are limited, vocalizations are similar, or background noise is substantial.
+
+### Data Analysis and Modeling Approach
+
+The project will follow a structured machine learning workflow:
+
+- **Exploratory Data Analysis (EDA):** Examine the distribution of recordings across species, identify class imbalance, inspect recording durations, and visualize audio signals and spectrograms.
+- **Feature Extraction:** Compute Mel-frequency cepstral coefficients (MFCCs), spectral statistics, and other relevant acoustic features to represent the recordings numerically.
+- **Classification Models:** Train and compare Support Vector Machines (SVMs) and ensemble methods, such as Random Forests, using consistent evaluation procedures.
+- **Model Evaluation:** Use stratified train-test splits or cross-validation where appropriate and compare accuracy, macro-F1 score, precision, recall, and confusion matrices to assess performance across species.
+- **Optional Unsupervised Learning:** Explore clustering to investigate whether recordings from the same species exhibit similar acoustic patterns without using species labels during clustering.
+- **Visualization and Interpretation:** Present class distributions, spectrograms, confusion matrices, and comparative model-performance plots to identify strengths, weaknesses, and potential sources of misclassification.
+
+### Challenges and Potential Impact
+
+The main challenges include class imbalance, variable recording quality, background noise, differences in recording equipment and environments, and the risk of data leakage when recordings from the same source are distributed across training and test sets. Another important challenge is ensuring that models generalize beyond the recordings used for training.
+
+The project connects practical machine learning techniques with a real conservation problem in Colombia, illustrating how automated acoustic analysis can help researchers monitor biodiversity more efficiently and potentially support ecological research and conservation decisions.
+
+### References and Data Resources
+
+- [BirdCLEF+ 2025 Competition and Dataset — Kaggle](https://www.kaggle.com/c/birdclef-2025)
+- [BirdCLEF+ 2025 Task Description — ImageCLEF](https://www.imageclef.org/BirdCLEF2025)
+- [BirdCLEF 2025 Overview and Results](https://www.researchgate.net/publication/396180283_Overview_of_BirdCLEF_2025_Multi-Taxonomic_Sound_Identification_in_the_Middle_Magdalena_Colombia)
 
 
